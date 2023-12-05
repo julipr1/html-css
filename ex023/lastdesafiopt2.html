@@ -18,19 +18,31 @@ tr.top, tr.mid, tr.bot{
     background-color: grey;
 color: white;
 }
+col.carea{
+background-color: aqua;
+}
+col.cmedia{
+    background-color: blueviolet;
+}
 </style> <!--desafio feito incompleto, faltou a parte da nota, irei arrumar posteriormente quando ver o video da resolução do desafio-->
 </head>
 <body>
+ <table>
+    <colgroup>
+        <col class="carea">
+        <col class="cdisci">
+        <col class="cnotas" span="2">
+        <col class="cmedia">
+    </colgroup>
 
     <h1>Desafio Tabela</h1>
     <caption>Notas do Aluno nanana</caption>
-    <table>
     <thead>
         <tr class="top">
-            <th>Área</th>
+            <th scope="col">Área</th>
             <th>Disciplinas</th>
             <th colspan="2">Notas</th>
-            <th>Média</th>
+            <th scope="col">Média</th>
         </tr>
     </thead>
     <tbody>
